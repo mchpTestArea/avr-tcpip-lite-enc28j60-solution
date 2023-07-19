@@ -1,0 +1,389 @@
+<config configName="default" projectName="enc28j60-avr-tcpserver" configVersion="1.1" device="AVR64DD32" deviceLibraryClass="com.microchip.mcc.melody.Library" coreVersion="5.4.14">
+   <usedPackages class="java.util.ArrayList">
+      <package packageName="@mchp-mcc/avr-8bit" version="4.6.1-dev.3" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/avr8-configuration-bits-v1" version="4.2.10" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/avr8-pin-manager" version="4.5.0" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/delay-blocking-driver" version="3.0.5" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/ethernet-drivers-8bit" version="6.0.0-dev.2" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/main-manager" version="3.1.1" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/pin-content-processor" version="3.5.0" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/scf-avr8-clkctrl-v3" version="2.0.7" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/scf-avr8-interrupt-v1" version="5.0.12" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/scf-avr8-spi-v1" version="4.1.11" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/scf-avr8-tca-v1" version="6.0.8" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+      <package packageName="@mchp-mcc/tcpip-lite" version="5.0.0-dev.1" contentType="MELODY">
+         <modules class="java.util.ArrayList"/>
+      </package>
+   </usedPackages>
+   <usedClasses class="java.util.TreeMap">
+      <entry>
+         <string>Application Builder</string>
+         <string>class com.microchip.mcc.melody.module.FrameworkModule</string>
+      </entry>
+      <entry>
+         <string>CLKCTRL</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>CPUINT</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>Configuration Bits</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>MAIN MANAGER</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>Pin Manager</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>SPI0</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>TCA0</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>meta</string>
+         <string>class com.microchip.mcc.melody.hw.module.HardwareModule</string>
+      </entry>
+      <entry>
+         <string>module0</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module1</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module10</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module12</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module2</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module3</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module4</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module44</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module5</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module6</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+      <entry>
+         <string>module7</string>
+         <string>class com.microchip.mcc.melody.script.module.ScriptModule</string>
+      </entry>
+   </usedClasses>
+   <usedLibraries class="java.util.ArrayList">
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.melody.Library" version="2.4.0"/>
+   </usedLibraries>
+   <tokenMap class="java.util.TreeMap">
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Application Builder" name="graph-location-data"/>
+         <value>{}</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Application Builder" name="state"/>
+         <value>{&quot;userAddedModules&quot;:[&quot;module5&quot;,&quot;module4&quot;,&quot;module44&quot;,&quot;module1&quot;,&quot;module0&quot;,&quot;module3&quot;,&quot;module2&quot;],&quot;version&quot;:&quot;CURRENT&quot;,&quot;modules&quot;:{&quot;module5&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/scf-avr8-clkctrl-v3&quot;,&quot;imports&quot;:{&quot;pin_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;pin-standard&quot;,&quot;version&quot;:&quot;^0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module3&quot;,&quot;exportId&quot;:&quot;pin-standard&quot;}},&quot;scf_avr8_clkctrl_v3&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;scf-avr8-clkctrl-v3&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;CLKCTRL&quot;}},&quot;interrupt_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;interrupt-standard&quot;,&quot;version&quot;:&quot;^1&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module4&quot;,&quot;exportId&quot;:&quot;interrupt&quot;}},&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;config_device&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;config-device&quot;,&quot;version&quot;:&quot;^1&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module1&quot;,&quot;exportId&quot;:&quot;config_device&quot;}},&quot;initializer_system&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;initializer-system&quot;,&quot;version&quot;:&quot;^0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module1&quot;,&quot;exportId&quot;:&quot;initializer_system&quot;}},&quot;config_request&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;config-request&quot;,&quot;version&quot;:&quot;^2&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module1&quot;,&quot;exportId&quot;:&quot;config_request&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]}},&quot;module10&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/scf-avr8-tca-v1&quot;,&quot;imports&quot;:{&quot;osc_clock&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;osc-clocks&quot;,&quot;version&quot;:&quot;^0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module5&quot;,&quot;exportId&quot;:&quot;osc_clocks&quot;}},&quot;pin_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;pin-standard&quot;,&quot;version&quot;:&quot;^0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module3&quot;,&quot;exportId&quot;:&quot;pin-standard&quot;}},&quot;scf_avr8_tca_v1&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;scf-avr8-tca-v1&quot;,&quot;version&quot;:&quot;^1&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;TCA0&quot;}},&quot;interrupt_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;interrupt-standard&quot;,&quot;version&quot;:&quot;^1&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module4&quot;,&quot;exportId&quot;:&quot;interrupt&quot;}},&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;^1&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;initializer_system&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;initializer-system&quot;,&quot;version&quot;:&quot;^0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module1&quot;,&quot;exportId&quot;:&quot;initializer_system&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{&quot;main&quot;:{&quot;interrupt&quot;:{&quot;ovfi&quot;:true},&quot;hardware&quot;:{&quot;clkselTcaSingleCtrla&quot;:&quot;System Clock / 64&quot;,&quot;requestedTimeNorm&quot;:1.0}}}},&quot;module4&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/scf-avr8-interrupt-v1&quot;,&quot;imports&quot;:{&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;scf_avr8_interrupt_v1&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;scf-avr8-interrupt-v1&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;CPUINT&quot;}},&quot;initializer_system&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;initializer-system&quot;,&quot;version&quot;:&quot;^0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module1&quot;,&quot;exportId&quot;:&quot;initializer_system&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{&quot;main&quot;:{&quot;interrupt&quot;:{&quot;iSreg&quot;:true}}}},&quot;module7&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/scf-avr8-spi-v1&quot;,&quot;imports&quot;:{&quot;pin_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;pin-standard&quot;,&quot;version&quot;:&quot;^0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module3&quot;,&quot;exportId&quot;:&quot;pin-standard&quot;}},&quot;scf_avr8_spi_v1&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;scf-avr8-spi-v1&quot;,&quot;version&quot;:&quot;^1&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;SPI0&quot;}},&quot;interrupt_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;interrupt-standard&quot;,&quot;version&quot;:&quot;^1&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module4&quot;,&quot;exportId&quot;:&quot;interrupt&quot;}},&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;^1&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;osc_clocks&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;osc-clocks&quot;,&quot;version&quot;:&quot;^0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module5&quot;,&quot;exportId&quot;:&quot;osc_clocks&quot;}},&quot;initializer_system&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;initializer-system&quot;,&quot;version&quot;:&quot;^0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module1&quot;,&quot;exportId&quot;:&quot;initializer_system&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]}},&quot;module6&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/delay-blocking-driver&quot;,&quot;imports&quot;:{&quot;config_info&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;config-info&quot;,&quot;version&quot;:&quot;^0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module1&quot;,&quot;exportId&quot;:&quot;config_info&quot;}},&quot;osc_clocks&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;osc-clocks&quot;,&quot;version&quot;:&quot;^0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module5&quot;,&quot;exportId&quot;:&quot;osc_clocks&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]}},&quot;module12&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/ethernet-drivers-8bit&quot;,&quot;imports&quot;:{&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;pin_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;pin-standard&quot;,&quot;version&quot;:&quot;^0.1.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module3&quot;,&quot;exportId&quot;:&quot;pin-standard&quot;}},&quot;delay_blocking&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;delay-blocking&quot;,&quot;version&quot;:&quot;^0.1.1&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module6&quot;,&quot;exportId&quot;:&quot;delay_blocking&quot;}},&quot;spi_master_basic&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;spi-master-basic&quot;,&quot;version&quot;:&quot;^0.5.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module7&quot;,&quot;exportId&quot;:&quot;spi_master_basic&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{&quot;main&quot;:{&quot;software&quot;:{&quot;ethChipSelectPin&quot;:{&quot;PA7&quot;:{&quot;cname&quot;:&quot;ETH_CS&quot;,&quot;ioc&quot;:&quot;INTDIS_BUFFEN&quot;}}}}}},&quot;module44&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/tcpip-lite&quot;,&quot;imports&quot;:{&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;interrupt_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;interrupt-standard&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module4&quot;,&quot;exportId&quot;:&quot;interrupt&quot;}},&quot;initializer_main&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;initializer-main&quot;,&quot;version&quot;:&quot;^0|1&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module0&quot;,&quot;exportId&quot;:&quot;initializer_main&quot;}},&quot;timer_timeout&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;timer-timeout&quot;,&quot;version&quot;:&quot;^0.1.2&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module10&quot;,&quot;exportId&quot;:&quot;timer_timeout&quot;,&quot;label&quot;:&quot;TCA0&quot;}},&quot;ethernet_driver&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;ethernet-drivers-8bit-interface&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module12&quot;,&quot;exportId&quot;:&quot;ethernet_driver&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[&quot;timer_timeout&quot;]},&quot;payload&quot;:{&quot;main&quot;:{&quot;Protocol&quot;:{&quot;TCP&quot;:true}}}},&quot;module1&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/avr8-configuration-bits-v1&quot;,&quot;imports&quot;:{&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;initializer_main&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;initializer-main&quot;,&quot;version&quot;:&quot;^0.3.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module0&quot;,&quot;exportId&quot;:&quot;initializer_main&quot;}},&quot;avr8_configuration_bits_v1&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;avr8-configuration-bits-v1&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;Configuration Bits&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]}},&quot;module0&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/main-manager&quot;,&quot;imports&quot;:{&quot;main&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;main-manager&quot;,&quot;version&quot;:&quot;^1.*&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;MAIN MANAGER&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]}},&quot;module3&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/pin-content-processor&quot;,&quot;imports&quot;:{&quot;device-meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;meta&quot;}},&quot;pin-architecture&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;pin-architecture&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module2&quot;,&quot;exportId&quot;:&quot;pin-architecture&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{&quot;saved&quot;:{&quot;rows&quot;:{&quot;module12&quot;:{&quot;GPIO$ETH_CS$output&quot;:{&quot;pins&quot;:{&quot;PA0&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PA1&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PA2&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PA3&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PA4&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PA5&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PA6&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PA7&quot;:{&quot;state&quot;:&quot;L&quot;},&quot;PC0&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PC1&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PC2&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PC3&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PD1&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PD2&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PD3&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PD4&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PD5&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PD6&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PD7&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PF0&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PF1&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PF2&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PF3&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PF4&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PF5&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PF6&quot;:{&quot;state&quot;:&quot;MUL&quot;},&quot;PF7&quot;:{&quot;state&quot;:&quot;MUL&quot;}}}}}}}},&quot;module2&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/avr8-pin-manager&quot;,&quot;imports&quot;:{&quot;avr8-pin-manager&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;avr8-pin-manager&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;Pin Manager&quot;}},&quot;initializer_system&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;initializer-system&quot;,&quot;version&quot;:&quot;^0.*&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module1&quot;,&quot;exportId&quot;:&quot;initializer_system&quot;}}},&quot;framewSpecificState&quot;:{&quot;userEditedImports&quot;:[]},&quot;payload&quot;:{}}},&quot;content&quot;:{&quot;@mchp-mcc/avr-8bit&quot;:&quot;4.6.1-dev.3&quot;,&quot;@mchp-mcc/ethernet-drivers-8bit&quot;:&quot;6.0.0-dev.2&quot;,&quot;@mchp-mcc/tcpip-lite&quot;:&quot;5.0.0-dev.1&quot;,&quot;@mchp-mcc/pin-content-processor&quot;:&quot;3.5.0&quot;,&quot;@mchp-mcc/delay-blocking-driver&quot;:&quot;3.0.5&quot;,&quot;@mchp-mcc/scf-avr8-tca-v1&quot;:&quot;6.0.8&quot;,&quot;@mchp-mcc/avr8-pin-manager&quot;:&quot;4.5.0&quot;,&quot;@mchp-mcc/scf-avr8-spi-v1&quot;:&quot;4.1.11&quot;,&quot;@mchp-mcc/scf-avr8-interrupt-v1&quot;:&quot;5.0.12&quot;,&quot;@mchp-mcc/scf-avr8-clkctrl-v3&quot;:&quot;2.0.7&quot;,&quot;@mchp-mcc/main-manager&quot;:&quot;3.1.1&quot;,&quot;@mchp-mcc/avr8-configuration-bits-v1&quot;:&quot;4.2.10&quot;}}</value>
+      </entry>
+   </tokenMap>
+   <generatedFileHashHistoryMap class="java.util.HashMap">
+      <entry>
+         <file>mcc_generated_files\tcpiplite\ipv4.h</file>
+         <hash>53fd4aa47e7f91308b9cfade86ff858b32efc012b6a0e279a66b4a47b5479724</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\src\log.c</file>
+         <hash>96afab78b0d74a8b87853f7b77d9cd2cef84c7a5019bee734f5aae12772bd6f0</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\arpv4.h</file>
+         <hash>a1897ce2b9397bef3239ec579796346a2c355220a15f6a9fef5ea23ff9a5b1bc</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\interrupt.h</file>
+         <hash>75695d9cc1e45b240332ce98cce195022df36e1a15d4891d26cff6e390f2b765</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\port.h</file>
+         <hash>263a68fee4685f2eca9986a962d5dd14141bebcd043238117c0ca24e2a54a95f</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\src\log_console.c</file>
+         <hash>393e0f69dcd52d8036878f16daadc1227c552d11f513c4af0c3ce054ff14ff30</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\utils\interrupt_avr8.h</file>
+         <hash>bf66a9d1b57d17151c1aa3b9e207a694bbf854df962b69135c6d922d026ce7cf</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\tcpv4.h</file>
+         <hash>97d95d3b1742887cba20512d8afafa101ce0f986f388db2b33c5d6f9be5b3833</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\pins.h</file>
+         <hash>2323c22fb17c1e1fcc314b53fb0ee9c5ea07ae01760e134a5233e95fc7e8a767</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\rtcc.h</file>
+         <hash>8b94c7b3f272a253056510c9683d58d37b69efb87982e6af66c04b6197194fe2</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\timer\delay.h</file>
+         <hash>e85aa182539b83463ad13d1e80ed256eb4910a7dca9fedd8bff6786ba00cb141</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\clock.c</file>
+         <hash>f712f03827d2efc2db11606d25e481a193f4f16f46605dffc0ef6eea255ffe31</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\src\rtcc.c</file>
+         <hash>5560d5cc1c40f9a0d337bd9c7d62998b831414e9916ff85a13f5f18740a9d3b7</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\clock.h</file>
+         <hash>b25dc6cca3f5aac576eb1aea49186ae14ec9ffcaf93743d3c419cb54468d7e29</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\docs\delay.dox</file>
+         <hash>c89827f6b4b5ad140ff3bce823528203548b464048639e826d34662a40ebc366</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\src\lfsr.c</file>
+         <hash>02cb5b4e1a1d25983a158043ee959b56d3eff7d019c630441552ec0580c419e9</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\src\dhcp_client.c</file>
+         <hash>ecf7efef5d6c34788f9e5c4fb1131693a0b2c4c50ecf324fda01d05fb105e1a7</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\spi\src\spi0.c</file>
+         <hash>e59786c52053f3c99c09b42f4268500f88f591539fc53f5d424769f2eda9d9cb</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\src\log_syslog.c</file>
+         <hash>dcc430d972935543dfe2db5f164ae35385f424d7fac1617983d42cc137c86d31</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\lfsr.h</file>
+         <hash>0ff9bd1bc79922e224bac58620bb0fb6a3b1e10339757f72b6c593ff62b3baa1</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\system.h</file>
+         <hash>fc5c70325d8bf7339bf1be4e6cf1e2b7b159b8d25f54c9748e4e4627859984d8</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\ethernet\physical_layer_interface.h</file>
+         <hash>ff1c9073901ec203e25ee18233aa27bc0df28f1649129e7ff13976c6042bd2db</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\utils\assembler\gas.h</file>
+         <hash>05129f00ef45a989573a0427f37de7661fa3005f22778ad24c0dca228468a018</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\network.h</file>
+         <hash>9ec81aca85bb2f43c5214ca76e6638ba7f345cfc6421544477625e8e7ca81eb9</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\dhcp_client.h</file>
+         <hash>8e7f955da7be67844b85dcb81b1e18ca51a4f0c72320346d21d5a17c9c693fc9</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\timer\src\tca0.c</file>
+         <hash>3f0dbb8101d11a7241b490b12fcdb1ffacb286f22267ef8e05d27e0c7e36fd2b</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\tcpip_types.h</file>
+         <hash>b1bb04f221abda95a3beab4669c8c111d1824248714bb1d3b616335a0d740092</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\protected_io.S</file>
+         <hash>3bb77a623e934d19f38ed22bfd302ac90e929cb841406c027d11193bd5358b36</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\config_bits.c</file>
+         <hash>08ca8bc5250ff6a1d613e5a42ddf8a3888d383849ccc2a4428cca0b61e78964f</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\ethernet\enc28j60.h</file>
+         <hash>4412aa2449bd38c2eb8c9e3db056cbcc845b99a092f75f04b5ea42debb105482</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\log_syslog.h</file>
+         <hash>cb59d7d605b77d6daab78442363419acaaa3b815fb1263a7c6e4015e5c02123d</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\src\udpv4_port_handler_table.c</file>
+         <hash>df59969d33e31ac5cd1b1476c69015c97cf12d6102f64f4973efde4c302ddcd3</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\system.c</file>
+         <hash>64ec14b881a5dc839fb37e8da137789e265a34f677eccefb67500accc5000d8d</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\utils\compiler.h</file>
+         <hash>78fc7aaa9215a68e38da793ec09d384598330944557b49c79aef4af747e76e08</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\timer\timer_interface.h</file>
+         <hash>c663a68f1004f660bf34cd96cf61a9012847f97b9cff5098686010e234deb62a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\utils\utils_assert.h</file>
+         <hash>e6a57e1164f862da6a703fa67c200945b7a21fb6ab9e9b57ff14507467e04cc6</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\utils\assembler\iar.h</file>
+         <hash>baafb63c988a088a34457e1d6433e87a0b658d1486fce12eec427b9457991549</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\udpv4.h</file>
+         <hash>196675efa5a317b64409fa23524a09109ec86bb7ee1afa69501d56f4dad75168</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\pins.c</file>
+         <hash>35087750d4acbe78822794313b89a026aa6473d21e854d487cffb014eb07e5fb</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\timer\tca0.h</file>
+         <hash>5aac000bbb51c8915bdd2fefdd2604375562c69acef5023955296a387357647e</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\spi\spi_interface.h</file>
+         <hash>cd755e06457e2bb365bd4f949fdf7e49f12f9a89a3316457f3ff05083b538ffe</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\utils\atomic.h</file>
+         <hash>2a0975cf197fcfdec0a503a3e3b899336a83d123a3066d0e8c2b3fc5dbc3d6ac</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\src\ip_database.c</file>
+         <hash>428c86f5730461a44674d1226d1aef108664e5449ca063327d7afb30f81abe2a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\log_console.h</file>
+         <hash>8ce7fa1f69dc36a6169cdac93cf109796e88198b8174a8bf5b380a32f6a25424</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\ccp.h</file>
+         <hash>771ef1ef56b145740365ded07000a4e9820fc4e2c7025b40ab80bf13288ee5e3</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\src\tcpv4.c</file>
+         <hash>14d226e68c5b86e5877568a0f8334e6e3d9e2c421b15f894a863a1b180fc6f92</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\ethernet\src\enc28j60.c</file>
+         <hash>9c07d11d3e301e963be7d917b6e94d728bc5b9c595fc10094022ff43c366550e</hash>
+      </entry>
+      <entry>
+         <file>main.c</file>
+         <hash>886543d10ee8f8f99813a6d5d3b9959baf5c1da939546375c20e55e5b2ad52e1</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\src\udpv4.c</file>
+         <hash>9b5d18f9cbf2b37620a1681a647c0f8c70834c2065a000aa2a91f835f702f421</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\src\ipv4.c</file>
+         <hash>8161b00726891fd98846bb27d6f0b3ea03256089a6397ca230ffaf0704398e39</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\src\network.c</file>
+         <hash>869ee3d7ca7460ff14af576833422dab1c313f8aeac3dcdfbd3a913fc447416e</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\timer\src\delay.c</file>
+         <hash>d0f84ba25b024e527aa3a2d842e33ce84c9e835f235cd015db58605536bf1a4a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\src\interrupt.c</file>
+         <hash>50dedff282518aad79d64bef461deb27ced81abc4b4033fd891ff29cc9bb5d54</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\ip_database.h</file>
+         <hash>9391586ab1c5424a21573d4277efc454d4d19cf1cf74900c20e9af18448a55c2</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\tcpip_config.h</file>
+         <hash>63612e28526229feaede1bd718e95d72f31aea8c59af98f5897d2618be4694f6</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\udpv4_port_handler_table.h</file>
+         <hash>4544bc16246ecda5ca6ec79060809f9a59bac13f07b8c42fef7be8485e38eb9b</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\utils\utils.h</file>
+         <hash>d02918b46fc138c440e381cb9a557c9f69c1cc3eb141f007b0a3738f02f4d543</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\config_bits.h</file>
+         <hash>78e6784ab5d0a7086181220a1aa36dfc158ca65fcc64330dd7e033c7714704b8</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\utils\assembler.h</file>
+         <hash>a51d2178d0c940ae2d1b51eff122d0d63e53efe29edb2fb8c7fbd78b1c2fcabe</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\spi\spi0.h</file>
+         <hash>300c4b7c8fef8f7550445173c30260c521c8c1a6245bc5bf3cd4fbfcc7f3d702</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\log.h</file>
+         <hash>f413a8fa205321193870e99b6914e60500346fb0dce4f8014868ea258215bbc9</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system\protected_io.h</file>
+         <hash>2197a3749e9525a893011ccc9095321665641b68aeda5ebbea9d2711ab3f9aa7</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tcpiplite\src\arpv4.c</file>
+         <hash>5ec5b193796645fb43fd3a681cb1238c43ca4d9863ff1054b488c45848384bbe</hash>
+      </entry>
+   </generatedFileHashHistoryMap>
+</config>
