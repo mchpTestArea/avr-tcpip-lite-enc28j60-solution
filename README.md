@@ -30,7 +30,7 @@ This repository provides MPLAB® X IDE projects that are suitable for the AVR Dx
 4. MCC Melody Core v5.5.7 or later
 5. Ethernet Drivers Library v6.0.0
 6. TCP/IP Lite Library v5.0.0
-7. [Microchip TCP/IP Demo GUI](https://github.com/microchip-pic-avr-solutions/ethxxj60-tcpip-solution/files/6085538/TCPIP_Demo.zip)
+7. Microchip TCP/IP Demo GUI
 8. [Wireshark Network Analyzer Tool](https://www.wireshark.org/)
 
 ## Related Documentation
