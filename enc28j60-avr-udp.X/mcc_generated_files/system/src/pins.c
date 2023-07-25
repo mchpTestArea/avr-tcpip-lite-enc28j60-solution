@@ -53,7 +53,7 @@ void PIN_MANAGER_Initialize()
     PORTA.OUT = 0x0;
     PORTC.OUT = 0x0;
     PORTD.OUT = 0x0;
-    PORTF.OUT = 0x0;
+    PORTF.OUT = 0x20;
 
   /* PINxCTRL registers Initialization */
     PORTA.PIN0CTRL = 0x0;
@@ -88,6 +88,8 @@ void PIN_MANAGER_Initialize()
     PORTF.PIN5CTRL = 0x80;
     PORTF.PIN6CTRL = 0x0;
     PORTF.PIN7CTRL = 0x0;
+
+  /* EVGENCTRL registers Initialization */
 
   /* PORTMUX Initialization */
     PORTMUX.CCLROUTEA = 0x0;

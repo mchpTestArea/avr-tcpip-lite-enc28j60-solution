@@ -14,9 +14,6 @@
           <itemPath>mcc_generated_files/ethernet/enc28j60.h</itemPath>
           <itemPath>mcc_generated_files/ethernet/physical_layer_interface.h</itemPath>
         </logicalFolder>
-        <logicalFolder name="nvm" displayName="nvm" projectFiles="true">
-          <itemPath>mcc_generated_files/nvm/nvm.h</itemPath>
-        </logicalFolder>
         <logicalFolder name="spi" displayName="spi" projectFiles="true">
           <itemPath>mcc_generated_files/spi/spi0.h</itemPath>
           <itemPath>mcc_generated_files/spi/spi_interface.h</itemPath>
@@ -81,17 +78,9 @@
       <logicalFolder name="MCC Generated Files"
                      displayName="MCC Generated Files"
                      projectFiles="true">
-        <logicalFolder name="docs" displayName="docs" projectFiles="true">
-          <itemPath>mcc_generated_files/docs/delay.dox</itemPath>
-        </logicalFolder>
         <logicalFolder name="ethernet" displayName="ethernet" projectFiles="true">
           <logicalFolder name="src" displayName="src" projectFiles="true">
             <itemPath>mcc_generated_files/ethernet/src/enc28j60.c</itemPath>
-          </logicalFolder>
-        </logicalFolder>
-        <logicalFolder name="nvm" displayName="nvm" projectFiles="true">
-          <logicalFolder name="src" displayName="src" projectFiles="true">
-            <itemPath>mcc_generated_files/nvm/src/nvm.c</itemPath>
           </logicalFolder>
         </logicalFolder>
         <logicalFolder name="spi" displayName="spi" projectFiles="true">

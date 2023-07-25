@@ -35,9 +35,8 @@
 
 void SYSTEM_Initialize(void)
 {
-    PIN_MANAGER_Initialize();
     CLOCK_Initialize();
-    NVM_Initialize();
+    PIN_MANAGER_Initialize();
     SPI0_Initialize();
     TCA0_Initialize();
     CPUINT_Initialize();

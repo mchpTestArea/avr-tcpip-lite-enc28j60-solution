@@ -38,6 +38,8 @@ static void (*ETH_CS_InterruptHandler)(void);
 static void (*IO_PA5_InterruptHandler)(void);
 static void (*IO_PA4_InterruptHandler)(void);
 static void (*IO_PA6_InterruptHandler)(void);
+static void (*SW0_InterruptHandler)(void);
+static void (*LED0_InterruptHandler)(void);
 
 void PIN_MANAGER_Initialize()
 {
@@ -45,13 +47,13 @@ void PIN_MANAGER_Initialize()
     PORTA.DIR = 0xD0;
     PORTC.DIR = 0x0;
     PORTD.DIR = 0x0;
-    PORTF.DIR = 0x0;
+    PORTF.DIR = 0x20;
 
   /* OUT Registers Initialization */
     PORTA.OUT = 0x0;
     PORTC.OUT = 0x0;
     PORTD.OUT = 0x0;
-    PORTF.OUT = 0x0;
+    PORTF.OUT = 0x20;
 
   /* PINxCTRL registers Initialization */
     PORTA.PIN0CTRL = 0x0;
@@ -83,9 +85,11 @@ void PIN_MANAGER_Initialize()
     PORTF.PIN2CTRL = 0x0;
     PORTF.PIN3CTRL = 0x0;
     PORTF.PIN4CTRL = 0x0;
-    PORTF.PIN5CTRL = 0x0;
+    PORTF.PIN5CTRL = 0x80;
     PORTF.PIN6CTRL = 0x0;
     PORTF.PIN7CTRL = 0x0;
+
+  /* EVGENCTRL registers Initialization */
 
   /* PORTMUX Initialization */
     PORTMUX.CCLROUTEA = 0x0;
@@ -102,6 +106,8 @@ void PIN_MANAGER_Initialize()
     IO_PA5_SetInterruptHandler(IO_PA5_DefaultInterruptHandler);
     IO_PA4_SetInterruptHandler(IO_PA4_DefaultInterruptHandler);
     IO_PA6_SetInterruptHandler(IO_PA6_DefaultInterruptHandler);
+    SW0_SetInterruptHandler(SW0_DefaultInterruptHandler);
+    LED0_SetInterruptHandler(LED0_DefaultInterruptHandler);
 }
 
 /**
@@ -156,6 +162,32 @@ void IO_PA6_DefaultInterruptHandler(void)
     // add your IO_PA6 interrupt custom code
     // or set custom function using IO_PA6_SetInterruptHandler()
 }
+/**
+  Allows selecting an interrupt handler for SW0 at application runtime
+*/
+void SW0_SetInterruptHandler(void (* interruptHandler)(void)) 
+{
+    SW0_InterruptHandler = interruptHandler;
+}
+
+void SW0_DefaultInterruptHandler(void)
+{
+    // add your SW0 interrupt custom code
+    // or set custom function using SW0_SetInterruptHandler()
+}
+/**
+  Allows selecting an interrupt handler for LED0 at application runtime
+*/
+void LED0_SetInterruptHandler(void (* interruptHandler)(void)) 
+{
+    LED0_InterruptHandler = interruptHandler;
+}
+
+void LED0_DefaultInterruptHandler(void)
+{
+    // add your LED0 interrupt custom code
+    // or set custom function using LED0_SetInterruptHandler()
+}
 ISR(PORTA_PORT_vect)
 { 
     // Call the interrupt handler for the callback registered at runtime
@@ -193,6 +225,15 @@ ISR(PORTD_PORT_vect)
 
 ISR(PORTF_PORT_vect)
 { 
+    // Call the interrupt handler for the callback registered at runtime
+    if(VPORTF.INTFLAGS & PORT_INT6_bm)
+    {
+       SW0_InterruptHandler(); 
+    }
+    if(VPORTF.INTFLAGS & PORT_INT5_bm)
+    {
+       LED0_InterruptHandler(); 
+    }
     /* Clear interrupt flags */
     VPORTF.INTFLAGS = 0xff;
 }

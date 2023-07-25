@@ -40,9 +40,8 @@ extern "C" {
 
 #include "../system/utils/compiler.h"
 #include "config_bits.h"
-#include "../system/pins.h"
 #include "../system/clock.h"
-#include "../nvm/nvm.h"
+#include "../system/pins.h"
 #include "../spi/spi0.h"
 #include "../timer/tca0.h"
 #include "../system/interrupt.h"

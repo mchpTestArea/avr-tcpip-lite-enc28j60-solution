@@ -3,8 +3,8 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>enc28j60-avr-tcpserver</name>
-            <creation-uuid>e22dae0b-4691-49a2-8e12-41154576d691</creation-uuid>
+            <name>enc28j60-avr-udp</name>
+            <creation-uuid>082b3c69-7e4d-452b-a420-372670d66c2a</creation-uuid>
             <make-project-type>0</make-project-type>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>

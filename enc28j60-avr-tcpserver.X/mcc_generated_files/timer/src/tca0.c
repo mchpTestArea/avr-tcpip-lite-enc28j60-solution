@@ -171,13 +171,13 @@ void TCA0_Initialize(void) {
     TCA0.SINGLE.INTFLAGS = 0x0;
     
     // Period
-    TCA0.SINGLE.PER = 0xF423;
+    TCA0.SINGLE.PER = 0x3D08;
     
     // Temporary data for 16-bit Access
     TCA0.SINGLE.TEMP = 0x0;
     
-    // CLKSEL DIV64; ENABLE enabled; RUNSTDBY disabled; 
-    TCA0.SINGLE.CTRLA = 0xB;
+    // CLKSEL DIV256; ENABLE enabled; RUNSTDBY disabled; 
+    TCA0.SINGLE.CTRLA = 0xD;
     
 }
 
